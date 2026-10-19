@@ -1,4 +1,4 @@
-/* Banque de 201 questions originales en français, enrichie de questions inspirées de pratiques de réflexion psychologique. */
+/* Banque de 236 questions originales en français : réflexion, relations et confrontations bienveillantes. */
 window.DEEP_QUESTIONS = [
   {
     "category": "Identité",
@@ -1004,5 +1004,180 @@ window.DEEP_QUESTIONS = [
     "category": "Limites et confiance",
     "level": 3,
     "q": "Quelle limite te serait plus facile à poser si tu n’avais pas peur de décevoir ?"
+  },
+  {
+    "category": "Identité",
+    "level": 1,
+    "q": "Quelle image de toi essaies-tu le plus de contrôler devant les autres ?"
+  },
+  {
+    "category": "Identité",
+    "level": 2,
+    "q": "Quelle qualité revendiques-tu, mais as-tu parfois du mal à incarner ?"
+  },
+  {
+    "category": "Identité",
+    "level": 3,
+    "q": "Dans quelle situation ton comportement contredit-il le plus l’image que tu as de toi ?"
+  },
+  {
+    "category": "Identité",
+    "level": 4,
+    "q": "Quelle critique te met immédiatement sur la défensive, même si une partie de toi sait qu’elle est juste ?"
+  },
+  {
+    "category": "Identité",
+    "level": 5,
+    "q": "Si tes actes parlaient plus fort que tes intentions, que diraient-ils de toi ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 2,
+    "q": "Quelle excuse utilises-tu le plus souvent pour éviter une conversation difficile ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 3,
+    "q": "Quelle vérité défends-tu en théorie, mais contournes parfois dans ta propre vie ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 4,
+    "q": "Quelle version de l’histoire racontes-tu pour avoir le beau rôle ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 5,
+    "q": "Qu’est-ce que tu reproches aux autres alors que tu fais parfois exactement la même chose ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 2,
+    "q": "Quel principe devient soudain moins important quand il t’empêche d’obtenir ce que tu veux ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 3,
+    "q": "As-tu déjà appelé cela de la franchise alors que tu voulais surtout blesser quelqu’un ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 4,
+    "q": "Quel comportement excuses-tu chez toi, mais juges sévèrement chez les autres ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 5,
+    "q": "Quelle conviction abandonnerais-tu en premier si elle te coûtait ton statut ou ton confort ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 2,
+    "q": "Quel rôle joues-tu dans un groupe pour être apprécié ou garder ta place ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 3,
+    "q": "As-tu déjà fait semblant d’être d’accord avec un ami pour éviter d’être mis à l’écart ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 4,
+    "q": "Quelle vérité un ami proche pourrait-il te dire et que tu n’aurais pas envie d’entendre ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 5,
+    "q": "Si tes amis décrivaient ton pire défaut sans chercher à te ménager, que diraient-ils ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 1,
+    "q": "Quelle première impression as-tu eue de moi, et qu’est-ce qui a changé depuis ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 2,
+    "q": "Y a-t-il un moment où tu as été en désaccord avec moi sans me le dire ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 3,
+    "q": "Quelle habitude chez moi te fait réagir plus que tu ne le laisses paraître ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 4,
+    "q": "Qu’est-ce que tu n’oses pas me dire parce que tu crains ma réaction ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 5,
+    "q": "Si tu pouvais me poser une seule question et exiger une réponse honnête, laquelle choisirais-tu ?"
+  },
+  {
+    "category": "Jalousie et comparaison",
+    "level": 2,
+    "q": "Quelle réussite d’une autre personne as-tu minimisée pour protéger ton ego ?"
+  },
+  {
+    "category": "Jalousie et comparaison",
+    "level": 3,
+    "q": "Qui admires-tu tout en ressentant parfois une pointe d’envie ?"
+  },
+  {
+    "category": "Jalousie et comparaison",
+    "level": 4,
+    "q": "Quelle comparaison te pousse à prétendre que tu ne veux pas quelque chose que tu désires réellement ?"
+  },
+  {
+    "category": "Pouvoir et contrôle",
+    "level": 2,
+    "q": "Quand tu dis « je m’en fiche », est-ce toujours vrai ou est-ce parfois une façon de garder le contrôle ?"
+  },
+  {
+    "category": "Pouvoir et contrôle",
+    "level": 3,
+    "q": "As-tu déjà présenté une décision comme inévitable alors que tu l’avais simplement déjà prise ?"
+  },
+  {
+    "category": "Pouvoir et contrôle",
+    "level": 4,
+    "q": "Quand tu veux avoir le dernier mot, qu’essaies-tu vraiment de protéger ?"
+  },
+  {
+    "category": "Pouvoir et contrôle",
+    "level": 5,
+    "q": "Quelle part de ta personnalité apparaît quand tu sais que personne ne peut te contredire ?"
+  },
+  {
+    "category": "Limites et confiance",
+    "level": 2,
+    "q": "As-tu déjà appelé quelqu’un de « trop sensible » parce que sa réaction te mettait face à tes actes ?"
+  },
+  {
+    "category": "Limites et confiance",
+    "level": 3,
+    "q": "Quand quelqu’un te confronte, cherches-tu d’abord à comprendre ou à te défendre ?"
+  },
+  {
+    "category": "Limites et confiance",
+    "level": 4,
+    "q": "Quelle promesse fais-tu souvent avec sincérité, mais que tu tiens rarement ?"
+  },
+  {
+    "category": "Regrets et réparation",
+    "level": 3,
+    "q": "Quelle décision justifies-tu encore alors qu’au fond, tu sais que tu as blessé quelqu’un ?"
+  },
+  {
+    "category": "Regrets et réparation",
+    "level": 4,
+    "q": "Quelle excuse dois-tu arrêter d’utiliser pour ne pas changer ?"
+  },
+  {
+    "category": "Regrets et réparation",
+    "level": 5,
+    "q": "Si la personne concernée racontait cette histoire, qu’est-ce qu’elle dirait de différent de ta version ?"
   }
 ];
