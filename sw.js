@@ -1,5 +1,5 @@
-const CACHE = 'fitna-v1-20261019';
-const FILES = ['./', './index.html', './styles.css', './questions.js', './app.js', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
+const CACHE = 'fitna-v1-20261019-2';
+const FILES = ['./', './index.html', './styles.css', './questions.js', './app.js', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png', './icon.svg'];
 const NETWORK_FIRST = /(?:index\.html|styles\.css|questions\.js|app\.js|manifest\.webmanifest)(?:\?.*)?$/;
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
