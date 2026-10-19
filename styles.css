@@ -232,3 +232,20 @@ button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .game.active .relance-button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 @media(max-height:760px){.game.active .relance-button{margin-bottom:4px;padding:3px 7px;font-size:7px}}
 @media(prefers-reduced-motion:reduce){.game.active .relance-button{transition:none}}
+
+
+/* DEEP minimal rounded cards + personal question editor */
+.game.active .card-face{border-radius:14px;border-color:rgba(197,139,114,.28);box-shadow:0 18px 42px rgba(0,0,0,.28)}
+.game.active .card-back:before,.game.active .card-front:before{inset:13px;border-radius:8px;border-color:rgba(197,139,114,.19)}
+.game.active .card-back:after,.game.active .card-front:after{display:none}
+.game.active .card-emblem{width:68px;height:68px;opacity:.7}
+.game.active .card-back-title{font-size:20px;letter-spacing:1.5px}
+.game.active .card-front{background:linear-gradient(155deg,#222222 0%,#191919 75%,#171718 100%)}
+.custom-questions-panel{grid-column:1/-1;}
+.custom-questions-help{margin:9px 0 14px;color:#9d968c;font-size:12px;line-height:1.6;max-width:620px}
+.custom-questions-input{display:block;width:100%;resize:vertical;min-height:108px;padding:14px 15px;border:1px solid #3b3531;border-radius:10px;background:#111112;color:var(--ivory);font:13px/1.7 var(--sans);outline:none}
+.custom-questions-input::placeholder{color:#6f6a63}
+.custom-questions-input:focus{border-color:#c58b72;box-shadow:0 0 0 2px #c58b721c}
+.custom-questions-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:9px;color:#9d8a7d;font:9px var(--mono);letter-spacing:.5px}
+.custom-questions-footer .text-button{margin:0;padding:7px 0}
+@media(max-width:680px){.custom-questions-input{font-size:16px}.custom-questions-panel{grid-column:auto}.game.active .card-face{border-radius:12px}.game.active .card-back:before,.game.active .card-front:before{inset:11px;border-radius:7px}}
