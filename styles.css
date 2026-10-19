@@ -249,3 +249,12 @@ button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .custom-questions-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:9px;color:#9d8a7d;font:9px var(--mono);letter-spacing:.5px}
 .custom-questions-footer .text-button{margin:0;padding:7px 0}
 @media(max-width:680px){.custom-questions-input{font-size:16px}.custom-questions-panel{grid-column:auto}.game.active .card-face{border-radius:12px}.game.active .card-back:before,.game.active .card-front:before{inset:11px;border-radius:7px}}
+
+
+/* Keep every question comfortably inside the card on all screen sizes */
+.game.active .card-front{min-width:0;min-height:0;overflow:hidden}
+.game.active .question-wrap{width:100%;min-width:0;max-height:100%;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.game.active .question-wrap p{font-size:clamp(15px,2.6vh,23px);line-height:1.24;letter-spacing:-.2px;max-height:100%;overflow-wrap:anywhere;word-break:normal;hyphens:auto}
+.game.active .question-mark{flex:0 0 auto;font-size:34px;line-height:.8}
+@media(max-width:680px){.game.active .question-wrap p{font-size:clamp(15px,4.4vw,21px);line-height:1.22}}
+@media(max-height:760px){.game.active .question-wrap p{font-size:clamp(14px,2.4vh,19px);line-height:1.18}}
