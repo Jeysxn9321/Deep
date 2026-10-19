@@ -305,3 +305,13 @@ button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
  .game.active .stage{height:clamp(240px,35dvh,290px)}
  .game.active .question-wrap p{font-size:clamp(15px,4.1vw,19px)}
 }
+
+
+/* FITNA — choose the number of questions before starting */
+.question-limit-panel{margin-top:22px;padding:18px 20px;border:1px solid rgba(197,139,114,.22);border-radius:10px;background:rgba(255,255,255,.015)}
+.question-limit-row{display:flex;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap}
+.question-limit-select{min-width:190px;padding:12px 14px;border:1px solid #49403a;border-radius:7px;background:#151516;color:var(--ivory);font:12px var(--mono);outline:none}
+.question-limit-select:focus{border-color:var(--gold)}
+.question-limit-select option{background:#171819;color:var(--ivory)}
+.question-limit-note{font:10px var(--mono);letter-spacing:.4px;color:#9d968c}
+@media(max-width:680px){.question-limit-panel{padding:15px}.question-limit-row{gap:10px}.question-limit-select{width:100%;font-size:14px}.question-limit-note{font-size:9px}}
