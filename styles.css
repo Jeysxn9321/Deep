@@ -223,3 +223,12 @@ button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
   .game.active .card{transition:none;will-change:auto}
   .game.active .progress-bar{transition:none}
 }
+
+
+/* Optional follow-up prompt: subtle, compact and consistent with the DEEP palette */
+.game.active .relance-button{flex:0 0 auto;align-self:center;margin:0 auto 7px;padding:5px 9px;border:0;border-bottom:1px solid rgba(197,139,114,.35);background:transparent;color:#cda18d;font:8px var(--mono);letter-spacing:1.05px;cursor:pointer;transition:color .2s ease,border-color .2s ease}
+.game.active .relance-button span{margin-left:5px;font-size:12px}
+.game.active .relance-button:hover{color:var(--ivory);border-bottom-color:var(--gold)}
+.game.active .relance-button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(max-height:760px){.game.active .relance-button{margin-bottom:4px;padding:3px 7px;font-size:7px}}
+@media(prefers-reduced-motion:reduce){.game.active .relance-button{transition:none}}
