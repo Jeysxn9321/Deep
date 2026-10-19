@@ -1,4 +1,4 @@
-/* Banque de 150 questions originales en français. */
+/* Banque de 201 questions originales en français, enrichie de questions inspirées de pratiques de réflexion psychologique. */
 window.DEEP_QUESTIONS = [
   {
     "category": "Identité",
@@ -799,5 +799,210 @@ window.DEEP_QUESTIONS = [
     "category": "Limites et confiance",
     "level": 5,
     "q": "Quelle limite dois-tu poser même si cela risque de décevoir quelqu’un ?"
+  },
+  {
+    "category": "Identité",
+    "level": 1,
+    "q": "Dans quelles situations te sens-tu le plus libre d’être toi-même ?"
+  },
+  {
+    "category": "Identité",
+    "level": 2,
+    "q": "Quelle croyance sur toi-même es-tu en train de remettre en question ?"
+  },
+  {
+    "category": "Identité",
+    "level": 3,
+    "q": "Quelle contradiction en toi aimerais-tu mieux comprendre plutôt que corriger ?"
+  },
+  {
+    "category": "Enfance et famille",
+    "level": 2,
+    "q": "Qu’as-tu appris sur la façon de gérer les désaccords en observant ta famille ?"
+  },
+  {
+    "category": "Enfance et famille",
+    "level": 3,
+    "q": "Quelle règle implicite de ton enfance aimerais-tu garder, et laquelle laisser derrière toi ?"
+  },
+  {
+    "category": "Enfance et famille",
+    "level": 4,
+    "q": "De quelle manière cherches-tu encore à obtenir l’approbation que tu voulais plus jeune ?"
+  },
+  {
+    "category": "Amour et désir",
+    "level": 2,
+    "q": "À quel moment te sens-tu suffisamment en sécurité pour dire ce que tu veux vraiment ?"
+  },
+  {
+    "category": "Amour et désir",
+    "level": 3,
+    "q": "Quand tu te sens blessé en amour, as-tu tendance à te rapprocher, à te défendre ou à t’éloigner ?"
+  },
+  {
+    "category": "Amour et désir",
+    "level": 4,
+    "q": "Quelle conversation importante repousses-tu par peur de la réponse ?"
+  },
+  {
+    "category": "Intimité et sexualité",
+    "level": 1,
+    "q": "Qu’est-ce qui t’aide à te sentir à l’aise pour parler de tes besoins et de tes limites ?"
+  },
+  {
+    "category": "Intimité et sexualité",
+    "level": 3,
+    "q": "Comment sais-tu que tu peux dire non sans craindre de perdre l’affection de l’autre ?"
+  },
+  {
+    "category": "Intimité et sexualité",
+    "level": 4,
+    "q": "Y a-t-il un besoin d’intimité que tu as du mal à exprimer clairement ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 2,
+    "q": "Quelle chose vraie sur toi est difficile à expliquer aux autres ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 3,
+    "q": "Quelle vérité évites-tu parce qu’elle pourrait t’obliger à faire un choix ?"
+  },
+  {
+    "category": "Secrets et vérités",
+    "level": 4,
+    "q": "Qu’aimerais-tu pouvoir avouer sans avoir à te défendre ou à te justifier ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 1,
+    "q": "Qu’est-ce qui te fait sentir qu’une amitié est réciproque ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 2,
+    "q": "Comment réagis-tu quand tu as besoin de soutien mais que tu n’oses pas le demander ?"
+  },
+  {
+    "category": "Amitié et loyauté",
+    "level": 4,
+    "q": "Quelle différence fais-tu entre être loyal envers quelqu’un et te trahir toi-même ?"
+  },
+  {
+    "category": "Peurs et vulnérabilité",
+    "level": 1,
+    "q": "Qu’est-ce qui t’aide à retrouver ton calme quand une émotion devient intense ?"
+  },
+  {
+    "category": "Peurs et vulnérabilité",
+    "level": 2,
+    "q": "Quelle émotion est la plus difficile pour toi à montrer aux autres ?"
+  },
+  {
+    "category": "Peurs et vulnérabilité",
+    "level": 3,
+    "q": "Quand tu te sens rejeté, quelle histoire te racontes-tu spontanément sur toi-même ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 1,
+    "q": "Quelle valeur veux-tu que tes choix quotidiens reflètent davantage ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 2,
+    "q": "Quand deux valeurs importantes pour toi entrent en conflit, comment décides-tu ?"
+  },
+  {
+    "category": "Valeurs et morale",
+    "level": 4,
+    "q": "Quel compromis as-tu fait qui ne correspondait pas vraiment à tes valeurs ?"
+  },
+  {
+    "category": "Avenir et mortalité",
+    "level": 1,
+    "q": "Qu’aimerais-tu avoir davantage vécu dans les cinq prochaines années ?"
+  },
+  {
+    "category": "Avenir et mortalité",
+    "level": 2,
+    "q": "Si tu avais moins peur de décevoir les autres, qu’est-ce que tu changerais ?"
+  },
+  {
+    "category": "Avenir et mortalité",
+    "level": 4,
+    "q": "Qu’est-ce que tu ne veux plus remettre à plus tard par habitude ou par peur ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 1,
+    "q": "Qu’est-ce que tu apprécies chez moi et que tu ne dis pas assez souvent ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 2,
+    "q": "À quel moment te sens-tu le plus compris par moi ?"
+  },
+  {
+    "category": "Entre nous",
+    "level": 3,
+    "q": "Y a-t-il quelque chose que tu aimerais que je comprenne mieux à propos de toi ?"
+  },
+  {
+    "category": "Regrets et réparation",
+    "level": 2,
+    "q": "Qu’as-tu appris d’une erreur que tu ne referais pas aujourd’hui ?"
+  },
+  {
+    "category": "Regrets et réparation",
+    "level": 3,
+    "q": "À qui aimerais-tu présenter des excuses plus précises, et pour quoi exactement ?"
+  },
+  {
+    "category": "Désirs et fantasmes",
+    "level": 1,
+    "q": "Quel désir simple aimerais-tu t’autoriser à prendre plus au sérieux ?"
+  },
+  {
+    "category": "Pouvoir et contrôle",
+    "level": 2,
+    "q": "Dans quelles situations as-tu le plus de mal à demander de l’aide ?"
+  },
+  {
+    "category": "Pouvoir et contrôle",
+    "level": 3,
+    "q": "Qu’essaies-tu parfois de contrôler quand tu te sens incertain ?"
+  },
+  {
+    "category": "Sens de la vie",
+    "level": 1,
+    "q": "Qu’est-ce qui donne du sens à une journée ordinaire pour toi ?"
+  },
+  {
+    "category": "Sens de la vie",
+    "level": 3,
+    "q": "Quelle expérience a changé ta définition d’une vie réussie ?"
+  },
+  {
+    "category": "Jalousie et comparaison",
+    "level": 2,
+    "q": "Que révèle parfois ta jalousie sur quelque chose que tu aimerais pour toi ?"
+  },
+  {
+    "category": "Jalousie et comparaison",
+    "level": 3,
+    "q": "À qui te compares-tu le plus, et quelle attente cela révèle-t-il ?"
+  },
+  {
+    "category": "Limites et confiance",
+    "level": 1,
+    "q": "Comment préfères-tu qu’une personne te dise qu’elle a besoin d’espace ?"
+  },
+  {
+    "category": "Limites et confiance",
+    "level": 3,
+    "q": "Quelle limite te serait plus facile à poser si tu n’avais pas peur de décevoir ?"
   }
 ];
