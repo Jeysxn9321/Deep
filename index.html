@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#090909"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="DEEP"><link rel="apple-touch-icon" href="icon-180.png"><meta name="description" content="DEEP — a cinematic question-card game for conversations that matter."><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css"><title>DEEP — Les conversations qui comptent</title>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<header class="topbar"><a class="wordmark" href="#" aria-label="DEEP home">D<span>.</span></a><div class="top-meta"><span class="live-dot"></span><span>UN EXERCICE DE SINCÉRITÉ</span></div><button id="soundToggle" class="icon-button" aria-label="Activer ou désactiver le son" title="Activer ou désactiver le son">♫ <span id="soundLabel">SON DÉSACTIVÉ</span></button></header>
+<main id="app">
+<section id="welcome" class="screen welcome active">
+  <div class="eyebrow"><span class="eyebrow-line"></span> LES QUESTIONS QU’ON N’OSE PAS POSER <span class="eyebrow-line"></span></div>
+  <h1 class="hero-title">À quel point<br>connais-tu <em>vraiment</em><br>quelqu’un ?</h1>
+  <p class="hero-copy">Un jeu de cartes pour les choses qu’on ne dit pas.<br>Viens avec curiosité. Repartez plus proches.</p>
+  <button id="startBtn" class="primary-button">Entrer dans la conversation <span>↗</span></button>
+  <div class="welcome-foot"><span>PAS DE POINTS. PAS DE GAGNANT.</span><span>JUSTE DE LA SINCÉRITÉ.</span></div>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+</section>
+<section id="setup" class="screen setup">
+  <button class="back-button" data-back="welcome">← <span>RETOUR</span></button>
+  <div class="setup-heading"><div class="eyebrow">AVANT LA PREMIÈRE CARTE</div><h2>Fais place<br>à <em>la sincérité.</em></h2></div>
+  <div class="setup-grid">
+   <div class="setup-panel"><label class="field-label">01 / QUI JOUE ?</label><div class="mode-switch"><button class="mode-btn selected" data-mode="two">Deux personnes</button><button class="mode-btn" data-mode="group">Groupe</button></div><div id="playersList" class="players-list"></div><button id="addPlayer" class="text-button">＋ AJOUTER UNE PERSONNE</button></div>
+   <div class="setup-panel"><label class="field-label">02 / CHOISIS LE TON</label><div class="category-list" id="categoryList"></div><label class="field-label intensity-label">03 / JUSQU’OÙ ?</label><div class="intensity-list"><button class="intensity-btn" data-level="1">01 <span>S’OUVRIR</span></button><button class="intensity-btn" data-level="2">02 <span>SE RAPPROCHER</span></button><button class="intensity-btn" data-level="3">03 <span>VULNÉRABILITÉ</span></button><button class="intensity-btn" data-level="4">04 <span>INCONFORTABLE</span></button><button class="intensity-btn" data-level="5">05 <span>SANS FILTRE</span></button><button class="intensity-btn selected" data-level="all">TOUT <span>SANS TABOU</span></button></div></div>
+  </div>
+  <div class="setup-bottom"><div><span id="deckCount">—</span><small> QUESTIONS DANS TON DECK</small></div><button id="beginBtn" class="primary-button">Mélanger les cartes <span>↗</span></button></div>
+</section>
+<section id="game" class="screen game">
+ <div class="game-top"><button id="exitGame" class="back-button">← <span>TERMINER LA PARTIE</span></button><div class="session-label">LA CONVERSATION <span id="roundNumber">01</span></div><button id="soundToggleGame" class="icon-button" aria-label="Toggle sound">♫</button></div>
+ <div class="turn-line"><div class="turn-kicker">À TOI DE JOUER</div><div id="activePlayer" class="active-player">JOUEUR UN</div><div id="turnDots" class="turn-dots"></div></div>
+ <div class="stage"><div class="deck-shadow"></div><div id="card" class="card" tabindex="0" role="button" aria-label="Révéler la carte-question"><div class="card-face card-back"><div class="card-corner top-left">D<span>.</span></div><div class="card-emblem"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="35"/><circle cx="50" cy="50" r="24"/><path d="M50 8 L50 92 M8 50 L92 50"/><path d="M21 21 L79 79 M79 21 L21 79"/></svg></div><div class="card-back-title">L’ART DE<br><em>SE CONNAÎTRE</em></div><div class="card-back-bottom"><span>PRENDS TON TEMPS</span><span>VOL. 01</span></div></div><div class="card-face card-front"><div class="card-topline"><span id="questionCategory">IDENTITÉ</span><span id="questionLevel">NIVEAU 03</span></div><div class="question-wrap"><div class="question-mark">“</div><p id="questionText">What part of yourself do you think people misunderstand the most?</p></div><div class="card-bottomline"><span>DEEP / CARTES DE CONVERSATION</span><span id="questionIndex">001</span></div></div></div></div>
+ <div id="revealHint" class="reveal-hint">TOUCHE LA CARTE POUR LA RÉVÉLER</div>
+ <div id="answerActions" class="answer-actions hidden"><button id="jokerBtn" class="joker-button"><span class="joker-glyph">✳</span><span>UTILISER TON JOKER<small id="jokerStatus">UNE SEULE FOIS</small></span></button><button id="answeredBtn" class="primary-button">On a répondu <span>↗</span></button></div>
+ <div class="game-footer"><div class="footer-stat"><strong id="answeredCount">0</strong><span>RÉPONDUES</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div><div class="footer-stat right"><strong id="remainingCount">—</strong><span>RESTANTES</span></div></div>
+</section>
+<section id="finish" class="screen finish"><div class="eyebrow">LA CONVERSATION S’ACHÈVE ICI</div><h2>Vous avez partagé<br><em>quelque chose de vrai.</em></h2><p class="finish-copy">Les meilleures questions continuent bien après avoir posé la carte.</p><div class="finish-stats"><div><strong id="finalAnswered">0</strong><span>RÉPONDUES</span></div><div><strong id="finalSkipped">0</strong><span>PASSÉES</span></div><div><strong id="finalPlayers">2</strong><span>JOUEURS</span></div></div><button id="playAgain" class="primary-button">Rejouer <span>↗</span></button><button id="backHome" class="text-button">RETOURNER AU DÉBUT</button></section>
+</main>
+<div id="jokerModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="jokerTitle"><div class="modal-card"><div class="modal-symbol">✳</div><div class="eyebrow">UN MOMENT POUR TOI</div><h2 id="jokerTitle">Utiliser ton <em>Joker ?</em></h2><p>Tu peux passer cette question sans te justifier. Ton Joker ne peut être utilisé qu’une seule fois pendant la partie.</p><div class="modal-actions"><button id="cancelJoker" class="secondary-button">GARDER LA CARTE</button><button id="confirmJoker" class="primary-button">UTILISER MON JOKER <span>↗</span></button></div></div></div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="questions.js"></script><script src="app.js"></script><script>if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) { window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {})); }</script>
+</body></html>
