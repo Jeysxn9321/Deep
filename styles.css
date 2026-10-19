@@ -234,7 +234,7 @@ button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 @media(prefers-reduced-motion:reduce){.game.active .relance-button{transition:none}}
 
 
-/* DEEP minimal rounded cards + personal question editor */
+/* FITNA minimal rounded cards + personal question editor */
 .game.active .card-face{border-radius:14px;border-color:rgba(197,139,114,.28);box-shadow:0 18px 42px rgba(0,0,0,.28)}
 .game.active .card-back:before,.game.active .card-front:before{inset:13px;border-radius:8px;border-color:rgba(197,139,114,.19)}
 .game.active .card-back:after,.game.active .card-front:after{display:none}
