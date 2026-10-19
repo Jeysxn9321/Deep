@@ -315,3 +315,11 @@ button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .question-limit-select option{background:#171819;color:var(--ivory)}
 .question-limit-note{font:10px var(--mono);letter-spacing:.4px;color:#9d968c}
 @media(max-width:680px){.question-limit-panel{padding:15px}.question-limit-row{gap:10px}.question-limit-select{width:100%;font-size:14px}.question-limit-note{font-size:9px}}
+
+/* FITNA — private, one-at-a-time custom question entry */
+.custom-questions-actions{display:grid;gap:10px;margin-top:12px}
+.custom-questions-actions>.secondary-button{width:100%;display:flex;justify-content:center;align-items:center;gap:10px;border-color:rgba(197,139,114,.4);border-radius:8px;color:#e4c0ad;font:9px var(--mono);letter-spacing:1px;padding:12px}
+.custom-questions-actions>.secondary-button span{font-size:16px}
+.custom-questions-actions>.secondary-button:hover{background:rgba(197,139,114,.08);border-color:var(--gold)}
+.custom-questions-footer{margin-top:0}
+.custom-questions-help{max-width:700px}
