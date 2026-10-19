@@ -1,11 +1,11 @@
-const CACHE = 'deep-v2-20261019';
+const CACHE = 'fitna-v1-20261019';
 const FILES = ['./', './index.html', './styles.css', './questions.js', './app.js', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 const NETWORK_FIRST = /(?:index\.html|styles\.css|questions\.js|app\.js|manifest\.webmanifest)(?:\?.*)?$/;
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('deep-') && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => (key.startsWith('deep-') || key.startsWith('fitna-')) && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
 });
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
