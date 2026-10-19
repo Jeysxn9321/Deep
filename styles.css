@@ -97,3 +97,129 @@
   .game.active .stage{height:min(31dvh, 270px);}
   .game.active .card{width:min(100%, calc(min(31dvh, 270px) * .71));}
 }
+
+
+/* DEEP — refined cinematic finish (v2) */
+:root{
+  --bg:#101112;
+  --panel:#171819;
+  --ivory:#f3efe7;
+  --muted:#a19b91;
+  --line:#303033;
+  --wine:#57343a;
+  --gold:#c58b72;
+}
+html{background:var(--bg);color:var(--ivory);-webkit-tap-highlight-color:transparent}
+body{
+  background:
+    radial-gradient(ellipse at 50% 38%,rgba(93,70,60,.20) 0%,rgba(25,25,25,.15) 38%,transparent 70%),
+    linear-gradient(145deg,#141516 0%,#0d0e0f 58%,#11100f 100%);
+}
+.grain{opacity:.035}
+.topbar{border-bottom-color:rgba(225,210,190,.09)}
+.wordmark span,.card-corner span{color:var(--gold)}
+.live-dot{background:var(--gold);box-shadow:0 0 10px #c58b7250}
+.primary-button{
+  background:#eee8de;color:#191817;border-color:#eee8de;border-radius:2px;
+  transition:background .22s ease,color .22s ease,transform .22s ease,border-color .22s ease;
+}
+.primary-button:hover{background:transparent;color:var(--ivory);border-color:#c58b72}
+button,.card{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.screen.active{animation:deepScreenIn .38s cubic-bezier(.2,.7,.2,1) both}
+@keyframes deepScreenIn{from{opacity:0;transform:translate3d(0,5px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+.game.active{
+  height:100svh;height:100dvh;min-height:0;
+  padding-top:calc(80px + env(safe-area-inset-top));
+  padding-bottom:max(10px,env(safe-area-inset-bottom));
+  gap:0;
+}
+.game.active .game-top{top:calc(62px + env(safe-area-inset-top))}
+.game.active .turn-line{margin-top:0;flex:0 0 auto}
+.game.active .stage{
+  width:100%;height:clamp(230px,33dvh,310px);min-height:0;flex:0 0 auto;
+  margin:9px auto 4px;perspective:1200px;perspective-origin:50% 45%;
+}
+.game.active .card{
+  width:auto;height:100%;aspect-ratio: .71;max-height:310px;
+  transform-style:preserve-3d;will-change:transform;
+  transition:transform .58s cubic-bezier(.22,.72,.18,1);
+  filter:none;box-shadow:none;
+}
+.game.active .card.flipped{transform:rotateY(180deg) translateZ(0)}
+.game.active .card-face{
+  border-color:rgba(197,139,114,.48);border-radius:4px;
+  box-shadow:0 18px 45px rgba(0,0,0,.34),0 2px 8px rgba(0,0,0,.24);
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+}
+.game.active .card-back{
+  background:
+    radial-gradient(ellipse at 50% 35%,rgba(197,139,114,.12),transparent 54%),
+    linear-gradient(145deg,#282321 0%,#191919 52%,#131415 100%);
+}
+.game.active .card-front{
+  background:
+    radial-gradient(ellipse at 50% 38%,rgba(197,139,114,.10),transparent 65%),
+    linear-gradient(145deg,#242323 0%,#191919 70%,#171718 100%);
+  padding:clamp(17px,2.2vh,25px) clamp(16px,4.8vw,24px) clamp(15px,2vh,22px);
+}
+.game.active .card-front:before,.game.active .card-back:before{border-color:rgba(197,139,114,.34)}
+.game.active .card-front:after{content:"";position:absolute;inset:13px;border:1px solid rgba(197,139,114,.10);pointer-events:none}
+.game.active .card-topline{color:#d1a18b;font-size:7px;letter-spacing:1px}
+.game.active .question-wrap{margin:auto 0;min-height:0}
+.game.active .question-mark{font-size:43px;color:#c58b72}
+.game.active .question-wrap p{
+  font-size:clamp(19px,5.1vw,25px);line-height:1.3;letter-spacing:-.25px;
+  overflow-wrap:anywhere;text-wrap:pretty;
+}
+.game.active .card-bottomline{font-size:6px;letter-spacing:.7px;gap:6px}
+.game.active .card-bottomline span:first-child{max-width:78%;line-height:1.5}
+.game.active .reveal-hint{margin:3px 0 8px;font-size:7px;letter-spacing:1.4px;flex:0 0 auto}
+.game.active .answer-actions{
+  width:min(100%,430px);min-height:52px;gap:8px;margin:0 auto 7px;
+  flex:0 0 auto;align-items:stretch;
+}
+.game.active .joker-button,.game.active .answer-actions .primary-button{
+  min-height:52px;border-radius:2px;
+}
+.game.active .joker-button{border-color:#57483f;color:#d3aa96}
+.game.active .joker-button:hover:not(:disabled){background:#28201d;border-color:#c58b72}
+.game.active .answer-actions .primary-button{font-size:9px;white-space:nowrap;padding:10px 12px}
+.game.active .game-footer{
+  grid-template-columns:58px minmax(30px,1fr) 64px;gap:10px;
+  width:min(100%,480px);padding-top:6px;flex:0 0 auto;margin-top:auto;
+}
+.game.active .footer-stat strong{font-size:19px}
+.game.active .progress-track{height:2px;background:#353333}
+.game.active .progress-bar{background:linear-gradient(90deg,#9d6d5a,#d4a18a);transition:width .35s ease}
+.category-option,.setup-panel,.modal-card{border-color:rgba(197,139,114,.22)}
+.category-option:has(input:checked){border-color:rgba(197,139,114,.62);background:rgba(197,139,114,.06)}
+.intensity-btn.selected{border-color:#c58b72;color:#e1b19a;background:rgba(197,139,114,.08)}
+.joker-button:focus-visible,.primary-button:focus-visible,.back-button:focus-visible{outline-color:#d6a18b}
+.toast{background:#211d1b;border-color:#775646;color:#f3e8dc}
+@media(max-width:680px){
+  .game.active{padding-top:calc(76px + env(safe-area-inset-top));padding-bottom:max(9px,env(safe-area-inset-bottom))}
+  .game.active .game-top{top:calc(58px + env(safe-area-inset-top));left:18px;right:18px}
+  .game.active .active-player{font-size:18px}
+  .game.active .stage{height:clamp(225px,33dvh,300px);margin-top:8px;margin-bottom:3px}
+  .game.active .card{height:100%;width:auto;max-height:300px}
+  .game.active .card-front{padding:18px 16px 15px}
+  .game.active .question-wrap p{font-size:clamp(18px,5.1vw,24px);line-height:1.3}
+  .game.active .answer-actions{gap:7px;margin-bottom:6px}
+  .game.active .joker-button{flex:0 1 48%;min-width:0;padding:7px 8px;gap:7px;font-size:7px;letter-spacing:.15px}
+  .game.active .joker-button small{font-size:6px;letter-spacing:.4px}
+  .game.active .answer-actions .primary-button{flex:1;min-width:0;font-size:8px;padding:9px 8px;gap:7px}
+}
+@media(max-height:760px){
+  .game.active{padding-top:calc(70px + env(safe-area-inset-top));padding-bottom:max(6px,env(safe-area-inset-bottom))}
+  .game.active .game-top{top:calc(53px + env(safe-area-inset-top))}
+  .game.active .stage{height:clamp(190px,29dvh,250px);margin-top:5px;margin-bottom:2px}
+  .game.active .card{max-height:250px}
+  .game.active .reveal-hint{margin:2px 0 5px}
+  .game.active .answer-actions{min-height:46px;margin-bottom:4px}
+  .game.active .joker-button,.game.active .answer-actions .primary-button{min-height:46px}
+  .game.active .game-footer{padding-top:4px}
+}
+@media(prefers-reduced-motion:reduce){
+  .game.active .card{transition:none;will-change:auto}
+  .game.active .progress-bar{transition:none}
+}
