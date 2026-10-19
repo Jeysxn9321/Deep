@@ -1179,5 +1179,130 @@ window.DEEP_QUESTIONS = [
     "category": "Regrets et réparation",
     "level": 5,
     "q": "Si la personne concernée racontait cette histoire, qu’est-ce qu’elle dirait de différent de ta version ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 1,
+    "q": "Si tu devais afficher une seule opinion impopulaire sur un écran géant, laquelle choisirais-tu ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 1,
+    "q": "Quel red flag les gens minimisent beaucoup trop dans une relation ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 2,
+    "q": "Est-ce qu’on peut vraiment séparer l’artiste de la personne, ou c’est juste une excuse pour continuer à le soutenir ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 2,
+    "q": "Quelle chose est considérée comme normale aujourd’hui, mais te paraît complètement toxique ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 2,
+    "q": "Tu préfères qu’on te dise une vérité blessante ou qu’on te protège avec un mensonge ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 3,
+    "q": "Quelle opinion pourrais-tu défendre pendant une heure même si tout le monde dans la pièce est contre toi ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 3,
+    "q": "À partir de quand une blague devient-elle une vraie preuve du caractère de quelqu’un ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 3,
+    "q": "Est-ce que tromper une fois fait forcément de quelqu’un une personne infidèle ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 3,
+    "q": "Qui doit le plus d’explications après une rupture : celui qui part ou celui qui reste ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 4,
+    "q": "Quelle est la pire chose qu’on puisse faire à un ami sans que ce soit techniquement une trahison ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 4,
+    "q": "Est-ce qu’une personne peut être quelqu’un de bien et faire volontairement quelque chose de vraiment cruel ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 4,
+    "q": "Tu pardonnes plus facilement une trahison physique ou une trahison émotionnelle ? Pourquoi ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 4,
+    "q": "Quel comportement te ferait couper les ponts sans donner une deuxième chance ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 4,
+    "q": "Est-ce que l’argent révèle la vraie personnalité ou est-ce qu’il la change ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 4,
+    "q": "Peut-on aimer quelqu’un et quand même être la pire personne pour lui ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Quelle vérité sur les relations amoureuses les gens refusent-ils d’admettre ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Est-ce qu’il existe des situations où mentir à son partenaire est la bonne décision ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Tu découvres que tous tes amis parlent de toi derrière ton dos : tu veux connaître les détails ou ne rien savoir ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Quel acte serait impardonnable même si la personne s’excusait sincèrement ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Est-ce que tu préfères être aimé pour une version imparfaite de toi ou admiré pour une version fausse ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "À quel moment la loyauté devient-elle de la complicité ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Si ton meilleur ami faisait quelque chose de moralement condamnable, tu le dénoncerais ou tu le protégerais ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Quelle opinion pourrait te faire perdre le respect que quelqu’un a pour toi ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Qu’est-ce qui fait le plus mal : être remplacé, être oublié ou découvrir qu’on n’a jamais vraiment compté ?"
+  },
+  {
+    "category": "Starkshow",
+    "level": 5,
+    "q": "Quelle question redoutes-tu qu’on te pose devant tous tes amis ?"
   }
 ];
